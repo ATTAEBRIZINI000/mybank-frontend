@@ -147,7 +147,7 @@ function UserCategories() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {UCLoading ? <MyLoader /> : uCategories.map((category, index) => (
+                                {UCLoading ? <MyLoader /> : uCategories && uCategories.map((category, index) => (
                                     <tr key={category.id} className="border-b ">
                                         <td className="px-6 py-4">{category.id}</td>
                                         <td className="px-6 py-4">{category.title}</td>
