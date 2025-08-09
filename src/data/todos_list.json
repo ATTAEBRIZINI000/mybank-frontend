@@ -1,0 +1,10 @@
+{
+  "todos": [
+    {
+      "id": "6",
+      "title": "Plan vacation",
+      "description": "Research for the trip to Japan",
+      "completed": false
+    }
+  ]
+}
