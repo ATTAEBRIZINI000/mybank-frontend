@@ -74,3 +74,5 @@ See `package.json` for complete list. Key dependencies include:
 - Tailwind CSS
 - React Router
 
+## CI/CD process
+![alt text](image-1.png)
