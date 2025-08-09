@@ -200,7 +200,7 @@ function UserTransactions() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {UOLoading ? <MyLoader /> : uOperations?.map((operation, index) => (
+                                {UOLoading ? <MyLoader /> : uOperations.map((operation, index) => (
                                     <tr key={operation.id} className="border-b ">
                                         <td scope="row" className="px-6 py-4">{operation.id}</td>
                                         <td className="px-6 py-4">{operation?.emoji + " " + operation.title}</td>
