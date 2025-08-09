@@ -8,7 +8,6 @@ import MyLoader from '../../components/MyLoader'
 
 function UserCategories() {
     const { data: uCategories, error: UCError, isLoading: UCLoading, refetch } = useGetUserCategoriesQuery()
-    console.log("uCategories", uCategories)
     const [updateCategory, { isLoading: isUpdating }] = useUpdateCategoryMutation()
     // New category form
     const [addCategory, { isLoading: isAdding, error: addError }] = useAddCategoryMutation()

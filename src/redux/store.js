@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { usersApi } from "@/redux/api/users";
 import { setupListeners } from '@reduxjs/toolkit/query'
-import { categoriesApi } from "./api/categories";
-import { operationsApi } from "./api/operatins";
+import { categoriesApi } from "@/redux/api/categories";
+import { operationsApi } from "@/redux/api/operatins";
 
 export const store = configureStore({
     reducer: {
