@@ -13,9 +13,9 @@ jobs:
     - name: Login to Docker Hub
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: Build The Services
-      run: docker build -t laouniabderrazzaq/bankfront .
+      run: docker build -t attaebrizini000/mybank-frontend .
     - name: Push to docker hub
-      run: docker push laouniabderrazzaq/bankfront:latest
+      run: docker push attaebrizini000/mybank-frontend:latest
   deploy:
     needs: build
     runs-on: self-hosted
@@ -27,9 +27,9 @@ jobs:
     - name: Remove Container
       run: docker rm bankfront || true
     - name: Remove Image
-      run: docker rmi laouniabderrazzaq/bankfront:latest || true
+      run: docker rmi attaebrizini000/mybank-frontend:latest || true
     - name: Pull Image
-      run: docker pull laouniabderrazzaq/bankfront:latest
+      run: docker pull attaebrizini000/mybank-frontend:latest
     - name: Run Container
-      run: docker run -d --name bankfront -p 3000:80 laouniabderrazzaq/bankfront:latest
+      run: docker run -d --name bankfront -p 3000:80 attaebrizini000/mybank-frontend:latest
 
